@@ -1,0 +1,17 @@
+# Makefile.include
+# Platform-dependent settings for HW1
+#
+
+CC = nvcc
+
+#COPTFLAGS = -O2
+
+CCFLAGS = -Xcompiler -fPIC -shared -rdc=true
+
+CFLAGS = $(COPTFLAGS)
+
+LINKER = nvcc
+
+LDFLAGS = -lm -Xcompiler -fPIC -shared -rdc=true
+
+
